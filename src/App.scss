@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  /* COLORS */
+
+  /* light mode colors */
+  --light-blue: #0079ff;
+  --light-gray: #697c9a;
+  --light-bluegray: #4b6a9b;
+  --light-smoke: #f6f8ff;
+  --light-dark: #2b3442;
+  --light-white: #fefefe;
+
+  // dark mode colors
+  --dark-blue: var(--light-blue);
+  --dark-white: #ffff;
+  --dark-black: #141d2f;
+  --dark-dark: #1e2a47;
+
+  // typography
+  --font-family: Space Mono;
+
+  --font-regular: 400;
+  --font-bold: 700;
+
+  --text-size-1: 13px;
+  --text-size-2: 15px;
+  --text-size-3: 16px;
+  --text-size-4: 18px;
+  --text-size-5: 22px;
+  --text-size-6: 26px;
+
+  --text-height: 25px;
+  --title-height: normal;
+}
+
+.btn {
+  width: 106px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #0079ff;
+}
+.input {
+  width: 540px;
+  height: 69px;
+  border-radius: 15px;
+  background: #1e2a47;
+}
+p {
+  color: wheat;
+}
