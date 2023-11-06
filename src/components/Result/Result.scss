@@ -1,9 +1,8 @@
 .result {
-  margin: 0 330px;
-
+  width: 730px;
+  padding: 0 48px;
   &__container {
-    display: flex;
-    background-color: aliceblue;
+    background-color: #fefefe;
   }
   &__user {
     display: flex;
@@ -12,16 +11,100 @@
     gap: 37px;
   }
   &__image {
-    border-radius: 50px;
+    background-color: aqua;
     width: 117px;
     height: 117px;
-    background-color: blue;
-
-    img {
-      object-fit: cover;
+    .image {
+      position: relative;
+      top: -20px;
+      object-fit: contain;
       overflow: hidden;
+      border-radius: 117px;
     }
   }
   &__info {
+    display: flex;
+    gap: 138px;
   }
+  &__title {
+    color: #2b3442;
+    font-family: Space Mono;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__account {
+    color: #0079ff;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__bio {
+    padding-top: 20px;
+    color: #4b6a9b;
+    font-family: Space Mono;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__date {
+    color: #697c9a;
+    text-align: right;
+    font-family: Space Mono;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__links {
+    position: relative;
+    right: -65px;
+  }
+  &__repos {
+    border-radius: 10px;
+    background: #f6f8ff;
+    width: 480px;
+    padding: 15px 0;
+  }
+
+  &__link {
+    display: grid;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+th,
+td {
+  padding: 0 49.5px;
+  text-align: center;
+  font-weight: normal;
+}
+.table_title {
+  color: #4b6a9b;
+  font-family: Space Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.table_info {
+  color: #2b3442;
+  font-family: Space Mono;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }

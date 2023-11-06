@@ -40,8 +40,20 @@ html[data-theme="dark"] {
   --dark-black: #141d2f;
   --dark-dark: #1e2a47;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0 auto;
+  margin: 0 auto;
+  font-weight: normal;
+}
 p {
   padding: 0 auto;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
 }
