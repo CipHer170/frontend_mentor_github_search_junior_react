@@ -1,10 +1,12 @@
 import "./App.scss";
-import SearchBar from "./components/SearchBar/SearchBar";
+import Result from "./components/Result/Result";
+// import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
     <>
-      <SearchBar />
+      {/* <SearchPage /> */}
+      <Result />
     </>
   );
 }

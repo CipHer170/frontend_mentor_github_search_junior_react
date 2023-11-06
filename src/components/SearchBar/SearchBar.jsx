@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsSearch } from "react-icons/bs";
+import { CiSearch } from "react-icons/ci";
 import "./SearchBar.scss";
 
 function SearchBar() {
@@ -12,15 +12,18 @@ function SearchBar() {
     setUserValue(e.target.value);
   };
   return (
-    <div className="searchbar input">
-      <p>{BsSearch}</p>
+    <div className="searchbar">
+      <p>
+        <CiSearch />
+      </p>
       <input
         type="text"
         name="searchbar"
         id="searchbar"
-        className="searchbar__input"
+        className="searchbar__input input"
         value={userValue}
         onChange={handleUserChange}
+        placeholder="Search GitHub username …"
       />
       <button className="searchbar__btn btn" onSubmit={handleSubmitSearch}>
         Search

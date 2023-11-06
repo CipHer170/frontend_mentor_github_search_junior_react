@@ -1,0 +1,27 @@
+.result {
+  margin: 0 330px;
+
+  &__container {
+    display: flex;
+    background-color: aliceblue;
+  }
+  &__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 37px;
+  }
+  &__image {
+    border-radius: 50px;
+    width: 117px;
+    height: 117px;
+    background-color: blue;
+
+    img {
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+  &__info {
+  }
+}

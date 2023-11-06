@@ -11,12 +11,6 @@
   --light-dark: #2b3442;
   --light-white: #fefefe;
 
-  // dark mode colors
-  --dark-blue: var(--light-blue);
-  --dark-white: #ffff;
-  --dark-black: #141d2f;
-  --dark-dark: #1e2a47;
-
   // typography
   --font-family: Space Mono;
 
@@ -34,18 +28,20 @@
   --title-height: normal;
 }
 
-.btn {
-  width: 106px;
-  height: 50px;
-  border-radius: 10px;
-  background-color: #0079ff;
+* {
+  padding: 0 auto;
+  margin: 20px auto;
+  box-sizing: border-box;
 }
-.input {
-  width: 540px;
-  height: 69px;
-  border-radius: 15px;
-  background: #1e2a47;
+html[data-theme="dark"] {
+  // dark mode colors
+  --dark-blue: var(--light-blue);
+  --dark-white: #ffff;
+  --dark-black: #141d2f;
+  --dark-dark: #1e2a47;
 }
+
 p {
-  color: wheat;
+  padding: 0 auto;
+  margin: 0 auto;
 }
