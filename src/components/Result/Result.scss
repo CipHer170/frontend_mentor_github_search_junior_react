@@ -75,7 +75,15 @@
   }
 
   &__link {
+    width: 480px;
     display: grid;
+    grid-template-columns: auto auto;
+    background-color: #0079ff;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
   }
 }
 

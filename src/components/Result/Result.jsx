@@ -1,7 +1,12 @@
 import React from "react";
 import userInfo from "../../assets/Bitmap.svg";
 import "./Result.scss";
-
+import {
+  BsFillBuildingsFill,
+  BsFillGeoAltFill,
+  BsLink45Deg,
+  BsTwitter,
+} from "react-icons/bs";
 function Result() {
   return (
     <div className="result">
@@ -43,10 +48,25 @@ function Result() {
             </table>
           </div>
           <div className="result__link">
-            <a href="/">geo</a>
-            <a href="/">github</a>
-            <a href="/">work</a>
-            <a href="/">twitter</a>
+            <a href="/">
+              {" "}
+              <BsFillGeoAltFill />
+              San Francisco
+            </a>
+
+            <a href="/">
+              <BsTwitter />
+              Not Available
+            </a>
+            <a href="/">
+              <BsLink45Deg />
+              https://github.blog
+            </a>
+
+            <a href="/">
+              <BsFillBuildingsFill />
+              @github
+            </a>
           </div>
         </div>
       </div>
