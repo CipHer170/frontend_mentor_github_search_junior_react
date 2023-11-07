@@ -73,46 +73,4 @@
     width: 480px;
     padding: 15px 0;
   }
-
-  &__link {
-    width: 480px;
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: #0079ff;
-    a {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-  }
-}
-
-table {
-  border-collapse: collapse;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-th,
-td {
-  padding: 0 49.5px;
-  text-align: center;
-  font-weight: normal;
-}
-.table_title {
-  color: #4b6a9b;
-  font-family: Space Mono;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: capitalize;
-}
-.table_info {
-  color: #2b3442;
-  font-family: Space Mono;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
 }
