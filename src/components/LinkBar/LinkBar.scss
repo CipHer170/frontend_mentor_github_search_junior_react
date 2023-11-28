@@ -1,15 +1,4 @@
-.result__link {
-  width: 480px;
-  display: grid;
-  grid-template-columns: auto auto;
-  background-color: #0079ff;
-  a {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-}
-
+// table
 table {
   border-collapse: collapse;
   padding: 0 auto;
@@ -21,6 +10,7 @@ td {
   text-align: center;
   font-weight: normal;
 }
+
 .table_title {
   color: #4b6a9b;
   font-family: Space Mono;
@@ -38,4 +28,27 @@ td {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+}
+
+// link
+.result__link {
+  width: 480px;
+  display: grid;
+  grid-template-columns: auto auto;
+  // color: #4b6a9b;
+  color: red;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }

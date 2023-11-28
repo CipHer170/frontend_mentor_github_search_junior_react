@@ -1,12 +1,12 @@
 .searchbar {
-  width: 540px;
+  width: 730px;
   height: 69px;
   border-radius: 15px;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  background-color: #fefefe;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 33px;
   font-family: var(--font-family);
   button {
     width: 106px;

@@ -1,13 +1,11 @@
 import "./App.scss";
-import Result from "./components/Result/Result";
-// import SearchPage from "./pages/SearchPage";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
-    <>
-      {/* <SearchPage /> */}
-      <Result />
-    </>
+    <div className="App">
+      <SearchPage />
+    </div>
   );
 }
 
