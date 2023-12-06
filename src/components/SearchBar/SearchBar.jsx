@@ -1,23 +1,13 @@
-import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import "./SearchBar.scss";
 
-function SearchBar() {
-  const [userValue, setUserValue] = useState();
-  const handleUserChange = (e) => {
-    e.preventDefault();
-  };
-  const handleSubmitSearch = (e) => {
-    e.preventDefault();
-    setUserValue(e.target.value);
-  };
+function SearchBar({ userValue, handleUserChange, handleSubmitSearch }) {
   return (
     <div className="searchbar">
       <p>
         <CiSearch />
       </p>
       <input
-        type="text"
         name="searchbar"
         id="searchbar"
         className="searchbar__input input"
@@ -25,10 +15,9 @@ function SearchBar() {
         onChange={handleUserChange}
         placeholder="Search GitHub username …"
       />
-      <button className="searchbar__btn btn" onSubmit={handleSubmitSearch}>
+      <button className="searchbar__btn btn" onClick={handleSubmitSearch}>
         Search
       </button>
-      <p>{userValue}</p>
     </div>
   );
 }

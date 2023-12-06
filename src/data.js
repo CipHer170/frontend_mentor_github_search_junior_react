@@ -1,5 +1,5 @@
 import userInfo from "./assets/Bitmap.svg";
-import noImage from "./assets/No_image_available.svg.png";
+import noImage from "./assets/No_image_available.svg.svg";
 
 export const data = [
   {
