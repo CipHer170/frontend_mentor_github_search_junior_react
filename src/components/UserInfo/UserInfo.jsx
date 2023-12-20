@@ -1,8 +1,9 @@
 import React from "react";
+import LinkBar from "../LinkBar/LinkBar";
 
-function UserInfo({ item, index }) {
+function UserInfo({ item }) {
   return (
-    item.id === 2 && (
+    <div className="resul">
       <div className="result__user">
         <div className="result__image">
           <img src={item.biophoto} alt="user info" className="image" />
@@ -10,22 +11,38 @@ function UserInfo({ item, index }) {
         <div className="result__info">
           <div className="result__info-details">
             <h1 className="result__title">
-              The Octocat
-              <h4 className="result__date">Joined 25 Jan 2011</h4>
+              {item.name}
+              <span className="result__date">
+                Joined {item.joinDay} {item.joinMonth} {item.joinYear}
+              </span>
             </h1>
-
             <a rel="stylesheet" href="/" className="result__account">
-              @octocat
+              {item.linkbio}
             </a>
             <h4 className="result__bio">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-              odio. Quisque volutpat mattis eros.
+              {item.bio ? item.bio : "User has no bio"}
             </h4>
           </div>
         </div>
       </div>
-    )
+      <LinkBar />
+    </div>
   );
 }
+
+// id: 2,
+// name: "The Sonocat",
+// joinDay: 7,
+// joinMonth: "June",
+// joinYear: 2012,
+// biophoto: noImage,
+// bio: "",
+// repos: 8,
+// followers: 3938,
+// following: 9,
+// livegeo: "San Francisco",
+// twitter: "https://twitter.blog",
+// workplace: "@github",
+// linkbio: "https://github.blog",
 
 export default UserInfo;
